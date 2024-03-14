@@ -1,28 +1,4 @@
-// // src/components/Orders.js
-// import React from 'react';
 
-// const Orders = () => {
-//   // Mock data
-//   const orders = [
-//     { id: 1, customerName: 'Customer 1', orderDate: '2024-03-10', status: 'Pending' },
-//     // Add more orders
-//   ];
-
-//   return (
-//     <div>
-//       <h1>Orders Management</h1>
-//       <ul>
-//         {orders.map((order) => (
-//           <li key={order.id}>
-//             Order ID: {order.id} - Customer: {order.customerName} - Date: {order.orderDate} - Status: {order.status}
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
-
-// export default Orders;
 
 
 import React from 'react';
