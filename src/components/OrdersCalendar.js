@@ -73,7 +73,7 @@ const OrdersCalendar = () => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '112vh', background: 'linear-gradient(to bottom,#ff6e7f, #bfe9ff )', color: '#fff' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '112vh', background: 'linear-gradient(to bottom,#ff6e7f, #bfe9ff )', color:'red' }}>
       <h1>Orders Calendar View</h1>
       <Calendar
         onChange={handleDateChange}
