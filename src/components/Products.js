@@ -1,11 +1,6 @@
-
-
-
-
 import React, { useState } from 'react';
 
 const Products = () => {
-  // Product data with images and prices
   const [newItem, setNewItem] = useState({
     name: '',
     price: '',
@@ -87,24 +82,14 @@ const Products = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setNewItem({
-      ...newItem,
-      [name]: value
-    });
+    setNewItem({ ...newItem, [name]: value });
   };
 
   const handleAddItem = () => {
     if (newItem.name && newItem.price && newItem.image) {
-      const updatedProducts = [...products, {
-        id: products.length + 1,
-        ...newItem
-      }];
+      const updatedProducts = [...products, { id: products.length + 1, ...newItem }];
       setProducts(updatedProducts);
-      setNewItem({
-        name: '',
-        price: '',
-        image: ''
-      });
+      setNewItem({ name: '', price: '', image: '' });
     }
   };
 
@@ -114,11 +99,7 @@ const Products = () => {
       <div className="product-container">
         {products.map((product) => (
           <div key={product.id} className="product-card">
-            <img
-              src={product.image}
-              alt={product.name}
-              className="product-image"
-            />
+            <img src={product.image} alt={product.name} className="product-image" />
             <div className="product-details">
               <div className="product-name">{product.name}</div>
               <div className="product-price">${product.price}</div>
@@ -129,26 +110,9 @@ const Products = () => {
       <div className="add-item-form">
         <div className="card">
           <div className="card-body">
-            <input
-              type="text"
-              name="name"
-              value={newItem.name}
-              placeholder="Item Name"
-              onChange={handleInputChange}
-            />
-            <input
-              type="number"
-              name="price"
-              value={newItem.price}
-              placeholder="Item Price"
-              onChange={handleInputChange}
-            />
-            <input
-              type="file"
-              name="image"
-              accept="image/*"
-              onChange={(e) => setNewItem({ ...newItem, image: e.target.files[0] })}
-            />
+            <input type="text" name="name" value={newItem.name} placeholder="Item Name" onChange={handleInputChange} />
+            <input type="number" name="price" value={newItem.price} placeholder="Item Price" onChange={handleInputChange} />
+            <input type="file" name="image" accept="image/*" onChange={(e) => setNewItem({ ...newItem, image: e.target.files[0] })} />
             <button onClick={handleAddItem}>Add Item</button>
           </div>
         </div>
