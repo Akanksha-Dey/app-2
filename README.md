@@ -35,12 +35,17 @@ The dashboard provides a snapshot of key metrics and features, including:
 - Total number of orders
 - Quick navigation links to Products and Orders management pages
 
+  ![Screenshot (161)](https://github.com/Akanksha-Dey/app-2/assets/126316084/f5299251-5e43-464c-ade9-786ef72c4aff)
+
 ### Products Management
 
 The products management page allows for easy management of product listings, featuring:
 
 - A list of products with details such as name, category, price, and stock quantity (utilizing mock data)
 - Functionalities to add, edit, and delete products
+
+  ![Screenshot (162)](https://github.com/Akanksha-Dey/app-2/assets/126316084/1a2ee380-22e2-418d-9728-45f1260436a3)
+
 
 ### Orders Management
 
@@ -49,6 +54,9 @@ The orders management page facilitates viewing and handling orders, showcasing:
 - A list of orders with details like order ID, customer name, order date, and status (using mock data)
 - Optional features include viewing order details, updating order status, and order deletion
 
+  ![Screenshot 2024-03-14 233508](https://github.com/Akanksha-Dey/app-2/assets/126316084/50162390-ca25-412f-90ba-ea692cc1decc)
+
+
 ### Orders Calendar View (Optional)
 
 For added convenience, an optional orders calendar view is available, featuring:
@@ -56,7 +64,15 @@ For added convenience, an optional orders calendar view is available, featuring:
 - A calendar interface displaying orders based on their expected delivery dates
 - Ability to click on a date to view all orders due for delivery that day
 
+![Screenshot 2024-03-14 233551](https://github.com/Akanksha-Dey/app-2/assets/126316084/7181964f-be36-4f28-8434-507f3129dd17)
 
+## Technology Stack
+
+While you have the freedom to choose any technology or framework, we recommend using React for the front-end development of this application. Our technology stack includes:
+
+- *React*: For building modular components and managing application state
+- *React Router*: For implementing navigation between different sections
+- *Mock Data*: Utilized for demonstration purposes
 
 ## Getting Started
 
@@ -75,4 +91,13 @@ To get started with the project:
 
 
 
-![Screenshot (161)](https://github.com/Akanksha-Dey/app-2/assets/126316084/a8bb8915-adac-45bb-990b-5d51c3efcf79)
+
+
+
+
+
+
+
+
+
+
